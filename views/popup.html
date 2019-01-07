@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>GBF Raiders Extension</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="/util/semantic.css" rel="stylesheet">
+	<link href="/util/sweetalert.css" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 100%;
+		}
+
+		#mute-btn {
+			margin-left: 10px;
+		}
+
+		#raid-table th {
+			border: 1px solid black;
+			text-align: center;
+			padding: 5px;
+		}
+
+		#raid-table td {
+			text-align: center;
+			white-space: nowrap;
+			padding: 5px;
+		}
+	</style>
+	<script src="/util/jquery-3.2.1.js"></script>
+	<script src="/util/semantic.js"></script>
+	<script src="/util/sweetalert.js"></script>
+	<script src="/util/moment.js"></script>
+	<script src="/scripts/popup.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<button id="mute-btn" class="ui negative right labeled icon button">Mute<i class="mute icon"></i></button>
+		<button id="stop-btn" class="ui negative right labeled icon button">Stop<i class="stop icon"></i></button>
+		<table id="raid-table" class="ui unstackable compact striped celled table">
+			<thead>
+				<tr id="header-container">
+					<th>Raid</th>
+					<th id="id-header">ID</th>
+					<th id="message-header">Message</th>
+					<th id="time-header">Time</th>
+					<th>Join</th>
+				</tr>
+			</thead>
+			<tbody id="raid-table-body">
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
